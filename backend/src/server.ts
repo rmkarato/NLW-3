@@ -1,52 +1,14 @@
 import express, { Request, Response } from "express";
 import { AddressInfo } from "net";
-import { getRepository } from "typeorm";
-import Orphanage from "./models/Orphanage";
 
 import "./database/connection";
 
+import routes from "./routes";
+
 const app = express();
+
 app.use(express.json());
-
-app.post("/orphanages", async (req: Request, res: Response) => {
-  try {
-    const {
-      name,
-      latitude,
-      longitude,
-      about,
-      instructions,
-      opening_hours,
-      open_on_weekends,
-    } = req.body;
-
-    const orphanagesRepository = getRepository(Orphanage);
-
-    const orphanage = orphanagesRepository.create({
-      name,
-      latitude,
-      longitude,
-      about,
-      instructions,
-      opening_hours,
-      open_on_weekends,
-    });
-
-    await orphanagesRepository.save(orphanage);
-
-    return res
-      .status(200)
-      .send({
-        message: "Orfanato criado com sucesso!"
-      });
-  } catch(error) {
-    res
-      .status(error.errorCode || 400)
-      .send({
-        message: error.message
-      });
-  }
-});
+app.use(routes);
 
 app.get("/test", async (req: Request, res: Response) => {
   try {
