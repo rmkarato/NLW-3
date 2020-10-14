@@ -22,6 +22,27 @@ export default {
     }
   },
 
+  async show(req: Request, res: Response) {
+    try {
+      const { id } = req.params;
+
+      const orphanagesRepository = getRepository(Orphanage);
+  
+      const orphanage = await orphanagesRepository.findOneOrFail(id);
+
+      return res
+        .status(200)
+        .json(orphanage);
+
+    } catch(error) {
+      res
+        .status(error.errorCode || 400)
+        .send({
+          message: error.message
+        });
+    }
+  },
+
   async create(req: Request, res: Response) {
     try {
       const {
