@@ -35,14 +35,14 @@ function OrphanagesMap() {
         </header>
 
         <footer>
-          <strong>São Caetano do Sul</strong>
+          <strong>Grande ABC</strong>
           <span>São Paulo</span>
         </footer>
       </aside>
 
       <Map 
-        center={[-23.6257809,-46.5740061]}
-        zoom={15}
+        center={[-23.65452,-46.5326225]}
+        zoom={13}
         style={{ width: "100%", height: "100%" }}
       >
         {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
