@@ -13,12 +13,19 @@
 
 - Typescript
 - ReactJS
-- NodeJS
 - HTML5
 - CSS3
+- Leaflet
+- Reacy Leaflet
+- Mapbox
+
+- NodeJS
 - Express
 - SQLite3
 - TypeOrm
+- Multer
+- Yup
+
 - React Native
 - Expo
 
