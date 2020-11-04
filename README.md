@@ -46,7 +46,7 @@ $npm run dev
 <p><strong>Run Web Project</strong></p>
 - Server Web
 - Para instalar dependências
-$npm install
+```$npm install```
 
 - Para rodar a aplicação
 $npm start
