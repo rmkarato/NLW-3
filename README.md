@@ -1,4 +1,4 @@
-# CUPONERIA | Teste Desenvolvedora Front-End
+# CUPONERIA | Teste Front-End
 
 Desenvolvimento de aplicação completa de front-end web com ReactJS para testar o conhecimento em relação às tecnologias utilizadas pela Equipe de Desenvolvedores Front-End da Cuponeria.
 
@@ -84,7 +84,7 @@ No header contém o botão "Back" para voltar à navegação anterior.
 
 Renata Mitsue Karato: Desenvolvedora web fullstack | Arquiteta
 
-- [Linkedin]("https://www.linkedin.com/in/rmkarato/")
-- [Github]("https://github.com/rmkarato")
+- [Linkedin](https://www.linkedin.com/in/rmkarato/)
+- [Github](https://github.com/rmkarato)
 - E-mail: rmkarato@gmail.com
 - Celular: 9 9763-7438
